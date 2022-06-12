@@ -30,6 +30,12 @@ There are basically four layers in the architecture of the Linux Operating Syste
 
 ## Basic Commands
 
+
+### NOTE
+
+> Shell Aliases- These are shortcuts to reference commands. These are created to avoid typing long commands and thus can be used in place of the reference commands.
+
+
 1. **pwd**- To show the current working directory.
 2. **ls**- To list down all the directories or files present in the current working directory.
 
@@ -75,6 +81,37 @@ e.g. rmdir new
 
 This way there are multiple ways to search files with different filters.
 
+11. **whoami**- Print the effective username of the current user
+
+12. **hostname**- Print the host name of the current system.
+
+13. **type**
+
+This command is used to know the type of any command. It has some options for  various purposes
+>type -a command- It will tell us whether the command is alias, keyword or a function, and also tell the path of the executable file.
+
+>type -t command- It will print whether the command is alias, keyword, builtin, function or a file
+
+> type -p  - It will print the name of the disc file which would be executed
+
+14. **grep** - This command is used for searching any file for a particular pattern or a word.
+
+>grep -i "unix" linux- This will be used for case case insensitive search for the word "unix" in the file linux.
+
+There are many options to be used in place of **i** for different results according to our need, for example **-c** will just print the count of the number, **-w** will search only for whole words not as a part of any other word, **-o** will just print the matched words and not the complete line etc.
+
+15. **wc** - This command is used to print the word count of any files, word count here means it can also count characters and lines.
+
+> wc filename - This will give a result like this
+>> 6 7 60
+>It means there are 6 lines, 7 words and 60 characters
+
+with wc we can use options , -c for number of character, -w for number of words , -l for number of lines and -L for the maximum width 
+
+16. **calc** - this command is used for doing calculation on the terminal
+Just run this command, and then you can perform any calculation.
+
+17. **locate** - This command is used for locating any  file by name.
 
 ## File Permissions in Linux
 
@@ -124,6 +161,24 @@ Now the owner will not be able to modify the file.
 we can use "o" and "g" in place of "u" to define for others and users in group respectively.
 
 
+## Linking in Linux
+In Linux we can create a link to a file, which can be used to open the file, which is similar to shortcuts in Windows.Both files will have the same content, and a change in any of the fie will be visible in the other one too.
+
+> To know whether there is any link or not run the command ls -li
+
+There are two types of links-
+
+1. Hard Link- In this link, the Inode value of both the source and the link is same, and thus even when when the source is deleted or shifted. 
+We cannot link directories via hardlink, only files are allowed.
+ 
+ The method to create hard link 
+
+> ln {source path] [new path]
+ 2. Soft Link- In this link we can also link directories and if we remove the source , the link will be like hanging and not point to anything.
+
+ The method to create soft link 
+
+> ln -s {source path] [new path]
 
 
   
