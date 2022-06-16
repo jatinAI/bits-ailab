@@ -77,6 +77,8 @@ Until now we have just created the project, but it was not tracked by GIT, to ma
 9. To view the commit history
 
 > **git log** 
+
+
 > **git log -p**  - To show the change that has been made, it will print the complete history of changes
 
 
