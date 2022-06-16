@@ -26,3 +26,7 @@ This will make this file executable.
 > ./myscript.sh
 
 You have successfully created and run a script file.
+
+## References
+1.  https://www.shellscript.sh/
+2. https://www.freecodecamp.org/news/shell-scripting-crash-course-how-to-write-bash-scripts-in-linux/
