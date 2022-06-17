@@ -19,12 +19,15 @@ sudo apt install gitlab-ce -y
 
 #To change the gitlab url
 sudo nano /etc/gitlab/gitlab.rb
-#Now change the "external url" with the domain name of yours
+#Here we will not use ssl or domain name HTTPs, we will just use localhost for running
+#Now change the "external url" with the ip address of yours
+#To find the ip address execute the following command
+hostname -I | awk '{print $1}'
 #Save and Exit the file
 
+#Now our username is 'root' and to set new password for this use the following command
+sudo gitlab-rake "gitlab:password:reset"
+#It will ask for username , enter root in it, and then it will ask password, set your own password
 
-#we will generate a new Letsencrypt certificate and DHPARAM certificate for the GitLab domain name 'gitlabs-livesmart-GitLab'.
-
-#letsencrypt tool installation
-sudo apt install letsencrypt -y
-sudo letsencrypt certonly --standalone --agree-tos --no-eff-email --agree-tos --email tensaitux993@gmail.com -d git.hakase-labs.pw
+#Now comes the final step
+#Copy the IP Address which you put in the external_url and paste it in the browser, GITLAB page will be opened, enter the credentials and you are in.
