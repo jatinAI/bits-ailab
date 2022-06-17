@@ -1,11 +1,9 @@
 ---
-title: Samit
+title: Report
 description: Weekly Report for work at BITS AI/ML Lab
 ---
 
-# Samit
-> Weekly Report for work at BITS AI/ML Lab
-
+# Report
 
 ## Week-1
 > 07th-Jun'22 till 15th-Jun'22
