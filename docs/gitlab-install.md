@@ -54,6 +54,8 @@
 ## Now comes the final step
 > Copy the IP Address which you put in the external_url and paste it in the browser, GITLAB page will be opened, enter the credentials and you are in.
 
+![gitlab-login](gitlab-loginpage.png)
+![gitlab-after-login](after-login.png)
 
 ### References
 * https://caffeinedev.medium.com/how-to-setup-and-configure-your-own-gitlab-server-on-ubuntu-20-04-73214cf63882
