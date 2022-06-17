@@ -53,3 +53,8 @@
 
 ## Now comes the final step
 > Copy the IP Address which you put in the external_url and paste it in the browser, GITLAB page will be opened, enter the credentials and you are in.
+
+
+### References
+* https://caffeinedev.medium.com/how-to-setup-and-configure-your-own-gitlab-server-on-ubuntu-20-04-73214cf63882
+* https://www.techrepublic.com/article/how-to-set-up-a-gitlab-server-and-host-your-own-git-repositories/
